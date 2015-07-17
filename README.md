@@ -1,1 +1,1 @@
-#Reddit Nature Backgrounds# Reddit-Nature-Backgrounds-for-Mac
+#Reddit-Nature-Backgrounds-for-Mac

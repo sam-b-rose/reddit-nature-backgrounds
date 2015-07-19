@@ -6,6 +6,7 @@ mkdir ~/Pictures/Backgrounds
 cp com.reddit.background.plist ~/Library/LaunchAgents
 cp get_images.py ~/Applications/Scripts
 launchctl load ~/Library/LaunchAgents/com.reddit.background.plist
+rm -r ../Reddit-Nature-Backgrounds-for-Mac-master.zip
 rm -r ../Reddit-Nature-Backgrounds-for-Mac-master
 
 echo “Done..."

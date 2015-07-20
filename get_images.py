@@ -6,12 +6,13 @@ import re
 import os
 
 # Configuration
+user = '$USER'
 urlString = "http://www.reddit.com/r/EarthPorn/top/?sort=top&t=day"  #Reddit page to check
-folder ='/Users/macbook/Pictures/Backgrounds/'  #Folder to store images
+folder ='/Users/' + user + '/Pictures/Backgrounds/'  #Folder to store images
 
 def main():
 
-    time.sleep(120) #Delay while internet connection is established on powerup
+    time.sleep(0) #Delay while internet connection is established on powerup
 
     deleteOldImages()
 
@@ -23,7 +24,7 @@ def main():
     # Script will grab 2 urls for each image (how Reddit is set up, I think)
     for index in range(0,numUrls,2):
         url = urlList[index]
-        fileName = "/Users/macbook/Pictures/Backgrounds/" + time.strftime("%m") + "_" + time.strftime("%d") + "_" + "%d.jpg" %imgName
+        fileName = "/Users/" + user + "/Pictures/Backgrounds/" + time.strftime("%m") + "_" + time.strftime("%d") + "_" + "%d.jpg" %imgName
         imgName += 1
 
         getImage(url,fileName)

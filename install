@@ -1,13 +1,53 @@
 #”bash install” from inside the Reddit-Nature-Backgrounds-for-Mac-master
 
 clear
-mkdir ~/Applications/Scripts
-mkdir ~/Pictures/Backgrounds
-cp com.reddit.background.plist ~/Library/LaunchAgents
-cp get_images.py ~/Applications/Scripts
-launchctl load ~/Library/LaunchAgents/com.reddit.background.plist
-rm -r ../Reddit-Nature-Backgrounds-for-Mac-master.zip
+
+# Vars
+u="/Users/"
+a="/Library/LaunchAgents/"
+s="/Library/Scripts/reddit-backgrounds"
+p="/Pictures/Backgrounds"
+
+
+
+# Set varible paths
+agentpath=$a
+echo $scriptpath
+
+scriptpath=$s
+echo $scriptpath
+
+picpath=$u$USER$p
+echo $picpath
+
+
+
+# Creat new directories
+sudo mkdir $scriptpath
+mkdir $picpath
+
+
+
+# Configure get_images.py script
+f="./get_images.py"
+sed -i "" "s/USER/$USER/g" $f
+
+
+
+# Copy files into directories
+sudo cp ./com.reddit.background.plist $agentpath
+sudo cp ./get_images.py $scriptpath
+
+
+
+# Load Agent
+launchctl load /Library/LaunchAgents/com.reddit.background.plist
+
+
+
+# Remove files
 rm -r ../Reddit-Nature-Backgrounds-for-Mac-master
 
-echo “Done..."
-echo “Now go to your backgrounds and select the Backgrounds folder."
+
+
+echo “Install complete... Now go to the Desktop & Sceen Saver settings in System Preferences and select the ~/Pictures/Backgrounds folder."

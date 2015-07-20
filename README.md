@@ -1,8 +1,5 @@
 #Reddit Nature Backgrounds for Mac
-
-##Caveats:
-**Setup shell script coming soon**
-Still working on better documentation.
+OSX only
 
 ##Installation
 1. Clone the repository to you computer by executing `git clone https://github.com/samrose3/Reddit-Nature-Backgrounds-for-Mac.git` from your terminal.

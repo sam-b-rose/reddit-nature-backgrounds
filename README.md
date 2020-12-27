@@ -4,7 +4,8 @@
 
 Warning: In Beta.. still working on better install configuration
 
-##Installation
+## Installation
+
 1. Clone the repository to you computer by executing `git clone https://github.com/samrose3/Reddit-Nature-Backgrounds-for-Mac.git` from your terminal.
 2. Run the install script from the terminal with `bash install` from within the Reddit-Nature-Backgrounds-for-Mac-master directory.
 4. Select the ~/Pictures/Backgrounds folder in your Desktop & Screen Saver section of System Preferences.

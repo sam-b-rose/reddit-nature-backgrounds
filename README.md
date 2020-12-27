@@ -1,6 +1,6 @@
 # Reddit Nature Backgrounds
 
->for Mac OSX only
+> for macOS only
 
 ## Installation
 

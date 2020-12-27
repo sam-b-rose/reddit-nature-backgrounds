@@ -1,5 +1,6 @@
-#Reddit Nature Backgrounds for Mac
-OSX only
+# Reddit Nature Backgrounds
+
+>for Mac OSX only
 
 Warning: In Beta.. still working on better install configuration
 
